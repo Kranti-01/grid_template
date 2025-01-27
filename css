@@ -1,0 +1,64 @@
+.header{
+    background-color: rgb(255, 87, 87);
+    grid-area: header;
+    padding:1rem;
+}
+.footer{
+    background-color: rgb(255, 88, 88);
+    grid-area: footer;
+    padding: 1rem;
+}
+.main{
+    background-color: rgb(255, 114, 255);
+    grid-area: main;
+    padding: 1rem;
+}
+.sidebar{
+    background-color: rgb(255, 255, 122);
+    grid-area: sidebar;
+    padding: 1rem;
+    border-right: 1px solid black;
+    text-align: center;
+    align-content: center;
+}
+.logo{
+    background-color: rgb(255, 193, 0);
+    color: black;
+    opacity: 0.2;
+    grid-area: logo;
+    padding: 1rem;
+    border-right: 1px solid black;
+}
+.calender{
+    background-color: rgb(255, 0, 0);
+    opacity: 0.2;
+    grid-area:  calender;
+    padding: 1rem;
+    border-right: 1px solid black;
+}
+
+.contact{
+    background-color: rgb(255, 186, 56);
+    opacity: 0.2;
+    grid-area: contact;
+    padding: 1rem;
+    border-right: 1px solid black;
+}
+
+.chat{
+    background-color: rgb(255, 181, 139);
+    opacity: 0.2;
+    grid-area: chat;
+    padding: 1rem;
+    border-right: 1px solid black;
+}
+.gridcheck{
+    display: grid;
+    grid-template-areas:
+    "logo header header "
+    "sidebar main calender"
+    "contact contact chat";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 250px 1fr 250px;
+    height: 100vh;
+}
